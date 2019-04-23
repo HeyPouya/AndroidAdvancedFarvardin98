@@ -1,6 +1,6 @@
 package com.sematec.bootcamp.eight.androidadvancedfarvardin98
 
-class TestKotlin {
+class TestKotlin(val f : String) {
 
 
     var a = "Pouya"

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class TestJava {
 
 
+
     String s = "Pouya";
 
     int a = 120;
@@ -15,7 +16,8 @@ public class TestJava {
     //return type : void
     public void testFunction() {
 
-        TestKotlin k = new TestKotlin();
+//        TestKotlin k = new TestKotlin();
+
     }
 
 
