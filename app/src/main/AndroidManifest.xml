@@ -3,26 +3,32 @@
     package="com.sematec.bootcamp.eight.androidadvancedfarvardin98">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".base.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestRetrofitActivity">
+        <activity android:name=".features.recycler.TestRecyclerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
         </activity>
-        <activity android:name=".TestRecyclerActivity" />
-        <activity android:name=".TestKotlinActivity" />
-        <activity android:name=".TestButterKnifeActivity">
-        </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".features.lambda.TestLambdaActivity" />
+        <activity android:name=".features.morekotlin.MoreKotlinActivity"></activity>
+        <activity android:name=".features.testmvp.TestMVPActivity" />
+        <activity android:name=".old.TestRetrofitActivity" />
+        <activity android:name=".old.TestRecyclerActivity" />
+        <activity android:name=".old.TestKotlinActivity" />
+        <activity android:name=".old.TestButterKnifeActivity" />
+        <activity android:name=".old.MainActivity" />
     </application>
 
 </manifest>
