@@ -18,6 +18,11 @@ class MoreKotlinActivity : AppCompatActivity() {
         val list = arrayListOf("Qoli", "Ali", "Pouya")
 
 
+        list.forEach {
+            println(it)
+        }
+
+
         for (i in 1..10) {
             println(i)
         }
@@ -55,13 +60,12 @@ class MoreKotlinActivity : AppCompatActivity() {
         }
 
 
-        val d = if (b > c){
-                    print("salam")
-                    //
-                    //
-                    10
-                }
-                else 5
+        val d = if (b > c) {
+            print("salam")
+            //
+            //
+            10
+        } else 5
 
     }
 

@@ -7,11 +7,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.sematec.bootcamp.eight.androidadvancedfarvardin98.R
 import kotlinx.android.synthetic.main.recycler_item.view.*
 
-class RecyclerAdapter(val list: ArrayList<String>, val clickHelper: ClickHelper) : RecyclerView.Adapter<RecyclerAdapter.RecyclerViewHolder>() {
+class RecyclerAdapter(val list: ArrayList<String>, val onNameClicked: (String) -> Unit) : RecyclerView.Adapter<RecyclerAdapter.RecyclerViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
 
         val v = LayoutInflater.from(parent.context).inflate(R.layout.recycler_item, parent, false)
-        return RecyclerViewHolder(v, clickHelper)
+        return RecyclerViewHolder(v, onNameClicked)
     }
 
     override fun getItemCount() = list.size
@@ -25,7 +25,7 @@ class RecyclerAdapter(val list: ArrayList<String>, val clickHelper: ClickHelper)
     }
 
 
-    class RecyclerViewHolder(val v: View, val clickHelper: ClickHelper) : RecyclerView.ViewHolder(v) {
+    class RecyclerViewHolder(val v: View, val onNameClicked: (String) -> Unit) : RecyclerView.ViewHolder(v) {
 
         fun onBind(item: String) {
             v.txtName.text = item
@@ -34,7 +34,7 @@ class RecyclerAdapter(val list: ArrayList<String>, val clickHelper: ClickHelper)
 
             v.setOnClickListener {
 
-                clickHelper.clicked(item)
+                onNameClicked(item)
 
             }
 

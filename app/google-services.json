@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "348411132441",
+    "firebase_url": "https://androidadvancesematec.firebaseio.com",
+    "project_id": "androidadvancesematec",
+    "storage_bucket": "androidadvancesematec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348411132441:android:f4adcfd06d18ba64",
+        "android_client_info": {
+          "package_name": "com.sematec.bootcamp.eight.androidadvancedfarvardin98"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348411132441-p6v0s40sg4tq902g8j7u37rdn9oo5c0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcwUWtK9QK4pcYvNa2N7CeZLQM3MfihIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348411132441-p6v0s40sg4tq902g8j7u37rdn9oo5c0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
