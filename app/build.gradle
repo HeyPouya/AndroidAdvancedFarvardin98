@@ -6,6 +6,9 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'io.fabric'
 
 
+def lifecycle_version = "2.0.0"
+
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -60,6 +63,8 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.14.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
 
     //FCM
     implementation 'com.google.firebase:firebase-core:16.0.9'
@@ -68,6 +73,14 @@ dependencies {
     // Crashlytics
     implementation 'com.crashlytics.sdk.android:crashlytics:2.10.0'
 
+
+    //architecture components
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+
+    //rxJava and android
+    implementation "io.reactivex.rxjava2:rxjava:2.2.8"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
 
 }
 repositories {
