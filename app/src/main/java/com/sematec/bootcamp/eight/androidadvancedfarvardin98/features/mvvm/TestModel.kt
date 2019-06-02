@@ -5,9 +5,7 @@ import io.reactivex.Observable
 class TestModel {
 
 
-
     fun getData(): Observable<Int> {
-        return Observable.just(1,2)
-
+        return Observable.just(1, 2)
     }
 }

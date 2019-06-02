@@ -15,14 +15,26 @@ android {
         applicationId "com.sematec.bootcamp.eight.androidadvancedfarvardin98"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 100
+        versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        release {
+            keyAlias 'MyApplication'
+            keyPassword '123@123'
+            storeFile file('/Users/pouya/StudioProjects/AndroidAdvancedFarvardin98/MyKeyStore.jks')
+            storePassword '123@123'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 
@@ -81,6 +93,12 @@ dependencies {
     //rxJava and android
     implementation "io.reactivex.rxjava2:rxjava:2.2.8"
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.2.0'
+
+    //dagger
+    implementation 'com.google.dagger:dagger:2.22.1'
+    kapt 'com.google.dagger:dagger-compiler:2.22.1'
+
 
 }
 repositories {

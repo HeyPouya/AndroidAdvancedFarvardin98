@@ -17,9 +17,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".features.mvvm.TestMVVMActivity">
+        <activity android:name=".dagger.TestDaggerActivity"></activity>
+        <activity android:name=".testRxAndroid.TestRxAndroid">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".features.mvvm.TestMVVMActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -32,20 +39,12 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".features.maps.MapsActivity"></activity>
+        <activity android:name=".features.maps.MapsActivity" />
         <activity android:name=".features.recycler.TestRecyclerActivity" />
         <activity android:name=".features.lambda.TestLambdaActivity" />
         <activity android:name=".features.morekotlin.MoreKotlinActivity" />
         <activity android:name=".features.testmvp.TestMVPActivity" />
-        <activity android:name=".old.TestRetrofitActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+        <activity android:name=".old.TestRetrofitActivity"></activity>
         <activity android:name=".old.TestRecyclerActivity" />
         <activity android:name=".old.TestKotlinActivity" />
         <activity android:name=".old.TestButterKnifeActivity" />

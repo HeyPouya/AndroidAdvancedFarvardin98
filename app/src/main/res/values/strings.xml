@@ -2,4 +2,5 @@
     <string name="app_name">AndroidAdvancedFarvardin98</string>
     <string name="welcome_to_my_application">Welcome to my application</string>
     <string name="title_activity_maps">Map</string>
+    <string name="please_searh_something">please searh something</string>
 </resources>

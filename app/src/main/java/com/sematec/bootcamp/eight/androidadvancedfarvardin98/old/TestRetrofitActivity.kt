@@ -4,10 +4,11 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.sematec.bootcamp.eight.androidadvancedfarvardin98.R
+import com.sematec.bootcamp.eight.androidadvancedfarvardin98.base.BaseActivity
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
-class TestRetrofitActivity : AppCompatActivity() {
+class TestRetrofitActivity : BaseActivity() {
 
 
     private var rInterface = RetrofitServiceGenerator.createService(RetrofitInterface::class.java)
@@ -24,7 +25,6 @@ class TestRetrofitActivity : AppCompatActivity() {
                     Log.d("TAAAAG", it.data.timings.isha)
                 }, {
                     Log.d("TAAAAG", it.message)
-
                 })
 
 
